@@ -93,5 +93,8 @@ def setup_rstudio():
         'launcher_entry': {
             'title': 'RStudio',
             'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'rstudio.svg')
+        },
+        proxy_headers: {
+            "X-RStudioUserIdentity" : getpass.getuser()
         }
     }
